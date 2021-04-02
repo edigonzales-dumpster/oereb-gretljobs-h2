@@ -21,7 +21,7 @@ def cadastralSurveyingDataSets = [2401,2402,2403,2404,2405,2406,2407,2408,2421,2
 
 def h2filename = "oerebdb"
 def h2path = "/tmp/gretl-share/"
-def dburi = 'jdbc:h2:' + file(Paths.get(h2path, h2filename)).getAbsolutePath() + ";DB_CLOSE_ON_EXIT=FALSE"
+def dburi = 'jdbc:h2:' + file(Paths.get(h2path, h2filename)).getAbsolutePath()
 
 cadastralSurveyingDataSets.each { cadastralSurveyingDataSet ->
     def dataSet = cadastralSurveyingDataSet.toString()
