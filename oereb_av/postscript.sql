@@ -1,1 +1,2 @@
-shutdown defrag
+--select 1;
+shutdown defrag;
